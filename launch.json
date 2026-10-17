@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "CoinbaseToken",
+    "name": "COINBASE",
+    "symbol": "COIN",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x6945df968a39edd0aa3f4b85f4949f6bf0f458f5"
+  },
+  "notes": "CoinbaseToken is an ERC-20 named COINBASE (COIN) with 18 decimals. Its no-argument constructor mints all 1,000,000,000 tokens once to msg.sender, the factory during launch. It has no administrative powers, transfer fees, or external mint or burn functions. There are no application contracts. The opening pool price is derived from economics.initialMarketCapWei and totalSupply; pool.initialPrice records provenance only."
+}
